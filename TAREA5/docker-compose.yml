@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  tarea5:
+    image: tarea5
+    build: .
+    ports:
+      - 3000:3000

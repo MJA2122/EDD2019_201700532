@@ -1,0 +1,89 @@
+digraph G { 
+node [shape = square]; 
+{rank=same Y_7 N_1_7 N_4_7 N_7_7 } 
+{rank=same Y_9 N_2_9 N_4_9 N_6_9 } 
+{rank=same Y_10 N_1_10 } 
+{rank=same Y_12 N_2_12 N_3_12 N_5_12 } 
+{rank=same Y_14 N_1_14 } 
+{rank=same Y_15 N_7_15 } 
+{rank=same Y_17 N_2_17 } 
+{rank=same Y_19 N_4_19 N_6_19 N_7_19 } 
+{rank=same Y_22 N_1_22 N_2_22 N_3_22 N_4_22 } 
+{rank=same Y_24 N_5_24 N_6_24 N_7_24 } 
+{rank=same P  X_1  X_2  X_3  X_4  X_5  X_6  X_7 } 
+P [label="Semana"]; 
+Y_7 [label=" Hora 7"]; N_1_7 [label="Desayunar1"]; N_4_7 [label="Desayunar"]; N_7_7 [label="Desayunar"]; 
+Y_9 [label=" Hora 9"]; N_2_9 [label="Correr"]; N_4_9 [label="Estudiar"]; N_6_9 [label="Estudiar"]; 
+Y_10 [label=" Hora 10"]; N_1_10 [label="Estudiar"]; 
+Y_12 [label=" Hora 12"]; N_2_12 [label="Almorzar"]; N_3_12 [label="Estudiar"]; N_5_12 [label="Estudiar"]; 
+Y_14 [label=" Hora 14"]; N_1_14 [label="Estudiar"]; 
+Y_15 [label=" Hora 15"]; N_7_15 [label="Estudiar"]; 
+Y_17 [label=" Hora 17"]; N_2_17 [label="Estudiar"]; 
+Y_19 [label=" Hora 19"]; N_4_19 [label="Correr"]; N_6_19 [label="Correr"]; N_7_19 [label="Correr"]; 
+Y_22 [label=" Hora 22"]; N_1_22 [label="Dormir"]; N_2_22 [label="Dormir"]; N_3_22 [label="Dormir"]; N_4_22 [label="Dormir"]; 
+Y_24 [label=" Hora 24"]; N_5_24 [label="Dormir"]; N_6_24 [label="Dormir"]; N_7_24 [label="Dormir"]; 
+X_1 [label=" Dia 1"]; X_2 [label=" Dia 2"]; X_3 [label=" Dia 3"]; X_4 [label=" Dia 4"]; X_5 [label=" Dia 5"]; X_6 [label=" Dia 6"]; X_7 [label=" Dia 7"]; 
+P -> Y_7 [constaint=false,dir=both]; 
+Y_7 -> N_1_7 [constaint=false,dir=both]; 
+N_1_7-> N_4_7 [constaint=false,dir=both]; 
+N_4_7-> N_7_7 [constaint=false,dir=both]; 
+Y_7 -> Y_9 [constaint=false,dir=both]; 
+Y_9 -> N_2_9 [constaint=false,dir=both]; 
+N_2_9-> N_4_9 [constaint=false,dir=both]; 
+N_4_9-> N_6_9 [constaint=false,dir=both]; 
+Y_9 -> Y_10 [constaint=false,dir=both]; 
+Y_10 -> N_1_10 [constaint=false,dir=both]; 
+Y_10 -> Y_12 [constaint=false,dir=both]; 
+Y_12 -> N_2_12 [constaint=false,dir=both]; 
+N_2_12-> N_3_12 [constaint=false,dir=both]; 
+N_3_12-> N_5_12 [constaint=false,dir=both]; 
+Y_12 -> Y_14 [constaint=false,dir=both]; 
+Y_14 -> N_1_14 [constaint=false,dir=both]; 
+Y_14 -> Y_15 [constaint=false,dir=both]; 
+Y_15 -> N_7_15 [constaint=false,dir=both]; 
+Y_15 -> Y_17 [constaint=false,dir=both]; 
+Y_17 -> N_2_17 [constaint=false,dir=both]; 
+Y_17 -> Y_19 [constaint=false,dir=both]; 
+Y_19 -> N_4_19 [constaint=false,dir=both]; 
+N_4_19-> N_6_19 [constaint=false,dir=both]; 
+N_6_19-> N_7_19 [constaint=false,dir=both]; 
+Y_19 -> Y_22 [constaint=false,dir=both]; 
+Y_22 -> N_1_22 [constaint=false,dir=both]; 
+N_1_22-> N_2_22 [constaint=false,dir=both]; 
+N_2_22-> N_3_22 [constaint=false,dir=both]; 
+N_3_22-> N_4_22 [constaint=false,dir=both]; 
+Y_22 -> Y_24 [constaint=false,dir=both]; 
+Y_24 -> N_5_24 [constaint=false,dir=both]; 
+N_5_24-> N_6_24 [constaint=false,dir=both]; 
+N_6_24-> N_7_24 [constaint=false,dir=both]; 
+P -> X_1 [constaint=false,dir=both]; 
+X_1 -> N_1_7 [constaint=false,dir=both]; 
+N_1_7-> N_1_10 [constaint=false,dir=both]; 
+N_1_10-> N_1_14 [constaint=false,dir=both]; 
+N_1_14-> N_1_22 [constaint=false,dir=both]; 
+X_1 -> X_2 [constaint=false,dir=both]; 
+X_2 -> N_2_9 [constaint=false,dir=both]; 
+N_2_9-> N_2_12 [constaint=false,dir=both]; 
+N_2_12-> N_2_17 [constaint=false,dir=both]; 
+N_2_17-> N_2_22 [constaint=false,dir=both]; 
+X_2 -> X_3 [constaint=false,dir=both]; 
+X_3 -> N_3_12 [constaint=false,dir=both]; 
+N_3_12-> N_3_22 [constaint=false,dir=both]; 
+X_3 -> X_4 [constaint=false,dir=both]; 
+X_4 -> N_4_7 [constaint=false,dir=both]; 
+N_4_7-> N_4_9 [constaint=false,dir=both]; 
+N_4_9-> N_4_19 [constaint=false,dir=both]; 
+N_4_19-> N_4_22 [constaint=false,dir=both]; 
+X_4 -> X_5 [constaint=false,dir=both]; 
+X_5 -> N_5_12 [constaint=false,dir=both]; 
+N_5_12-> N_5_24 [constaint=false,dir=both]; 
+X_5 -> X_6 [constaint=false,dir=both]; 
+X_6 -> N_6_9 [constaint=false,dir=both]; 
+N_6_9-> N_6_19 [constaint=false,dir=both]; 
+N_6_19-> N_6_24 [constaint=false,dir=both]; 
+X_6 -> X_7 [constaint=false,dir=both]; 
+X_7 -> N_7_7 [constaint=false,dir=both]; 
+N_7_7-> N_7_15 [constaint=false,dir=both]; 
+N_7_15-> N_7_19 [constaint=false,dir=both]; 
+N_7_19-> N_7_24 [constaint=false,dir=both]; 
+}
